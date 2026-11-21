@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Нет связи</title>
+<style>
+  :root { --bg:#f5f2ec; --text:#1d201e; --muted:#5c625d; --accent:#2f6b5a; color-scheme: light dark; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#121413; --text:#ecebe6; --muted:#a6aca6; } }
+  body { margin:0; min-height:100dvh; display:grid; place-items:center; background:var(--bg); color:var(--text);
+         font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; padding:16px; text-align:center; }
+  .mark { width:64px; height:64px; border-radius:20px; background:var(--accent); margin:0 auto 18px; display:grid; place-items:center; }
+  h1 { font-size:24px; margin:0 0 8px; }
+  p { color:var(--muted); margin:0 0 20px; max-width:340px; }
+  button { min-height:48px; padding:0 22px; border-radius:999px; border:0; background:var(--accent); color:#fff; font:inherit; font-weight:650; }
+</style>
+</head>
+<body>
+  <main>
+    <div class="mark"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.3" stroke-linecap="round"><path d="M4 15c2.5-2 5.5-2 8 0s5.5 2 8 0"/><path d="M4 10c2.5-2 5.5-2 8 0s5.5 2 8 0" opacity=".6"/></svg></div>
+    <h1>Нет подключения к интернету</h1>
+    <p>Корзина и черновик заявки сохранены в этом браузере. Как только связь появится, продолжите с того же места.</p>
+    <button onclick="location.reload()">Повторить</button>
+  </main>
+</body>
+</html>
